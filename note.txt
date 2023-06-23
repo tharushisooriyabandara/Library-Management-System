@@ -79,3 +79,23 @@ create a file called ".babelrc"
 create a folder "src"
     inside it, create a file "app.js"
 
+-----------------------------------------------------------------------------------------------------
+
+In app.js try to run; 
+    console.log ("Hello World");
+
+-----------------------------------------------------------------------------------------------------
+
+cmd: yarn add -D nodemon //install nodemon
+
+cmd: yarn add -D @babel/preset-env
+
+-----------------------------------------------------------------------------------------------------
+
+cmd : if you run yarn
+        yarn start
+
+      if you run npm
+        npm run start
+
+
