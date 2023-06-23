@@ -1,0 +1,9 @@
+{
+  "name": "Library-Management-System",
+  "version": "1.0.0",
+  "description": "Library Management System",
+  "main": "app.js",
+  "author": "Tharushi",
+  "license": "MIT",
+  "private": true
+}
