@@ -5,5 +5,14 @@
   "main": "app.js",
   "author": "Tharushi",
   "license": "MIT",
-  "private": true
+  "private": true,
+
+  "scripts": {
+    "babel-node": "babel-node --presets='@babel/preset-env' --ignore='foo|bar|baz'"
+  },
+
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/node": "^7.22.5"
+  }
 }

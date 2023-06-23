@@ -1,0 +1,81 @@
+-- Mern Stack Development --
+
+Technology - Mern Stack
+Database - MongoDB
+WebServer - Express Js
+Frontend - React Js
+Backend - Node Js
+----------------------------------------------------------------------------------------------------
+What REST API?
+    exchange json objects between frontend & backend, through REST API
+----------------------------------------------------------------------------------------------------
+controller - control all the requests, responses
+----------------------------------------------------------------------------------------------------
+service - communicate with the data access layer. it means implemented the business logic.
+^
+|
+V
+MongoDB / document DB / NoSQL database 
+    we call documentDB to mongoDB because all the data save as a document
+-----------------------------------------------------------------------------------------------------
+request validation - validate the requests before coming to the backend server. if there is an error occured, it will show in the frontend
+-----------------------------------------------------------------------------------------------------
+POST - create
+PUT - update
+GET
+DELETE
+-----------------------------------------------------------------------------------------------------
+install things:
+    VS Code
+    NodeJS (nodejs.org/en)
+        next check whether nodejs is successfully installed or not (node -v)
+    check the version of node package manager
+        (npm -v)
+    install yarn
+        go to the yarn website
+        installation -> alternatives -> download installer
+    check yarn version (yarn -v)
+-----------------------------------------------------------------------------------------------------
+npm init / yarn init
+-----------------------------------------------------------------------------------------------------
+then create a package.json file. it contains all the scripts & dependencies of the application
+-----------------------------------------------------------------------------------------------------
+now we have to install Barbel dependencies
+    because in JavaScript have several versions such as ES5, ES6, ES7..
+    when consider the react, usually it uses ES7
+    but sometimes ES7 is not suits for other servers
+    that's why we have to compile ES7 to ES5
+    therefore we have to install barbel dependencies into the project
+-----------------------------------------------------------------------------------------------------
+how to install barbel: 
+    go to the barbel webpage
+    select nodemon
+    cmd: yarn add -D @babel/core @babel/node
+
+now you can see the 2 installed barbel dependencies
+
+    "@babel/core": "^7.22.5",
+    "@babel/node": "^7.22.5"
+
+in the package.json file
+-----------------------------------------------------------------------------------------------------
+now paste this code snippet in the package.json file
+
+"scripts": {
+    "start": "nodemon --exec babel-node src/app.js"
+  }
+
+-----------------------------------------------------------------------------------------------------
+you can give any name for the above script like "start"
+
+create a file called ".babelrc"
+
+// Create babel.config.json configuration file
+    {
+    "presets": ["@babel/preset-env"]
+    }
+
+-----------------------------------------------------------------------------------------------------
+create a folder "src"
+    inside it, create a file "app.js"
+
